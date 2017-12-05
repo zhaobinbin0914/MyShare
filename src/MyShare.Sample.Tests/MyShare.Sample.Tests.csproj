@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="xunit.assert" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyShare.Kernel.Tests.Extensions\MyShare.Kernel.Tests.Extensions.csproj" />
+    <ProjectReference Include="..\MyShare.Kernel\MyShare.Kernel.csproj" />
+    <ProjectReference Include="..\MyShare.Sample\MyShare.Sample.csproj" />
+  </ItemGroup>
+
+</Project>

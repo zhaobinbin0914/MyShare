@@ -2,19 +2,7 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs/MyShare/v15
-/MyShare.Sample.Query/bin/Debug/netcoreapp2.0
-/MyShare.Sample.Query/obj
-/src/MyShare.Kernel/bin/Debug/netcoreapp2.0
-/src/MyShare.Kernel/obj/Debug/netcoreapp2.0
-/src/MyShare.Kernel.Tests/bin/Debug/netcoreapp2.0
-/src/MyShare.Kernel.Tests/obj/Debug/netcoreapp2.0
-/src/MyShare.Kernel.Tests.Extensions/bin/Debug/netcoreapp2.0
-/src/MyShare.Kernel.Tests.Extensions/obj/Debug/netcoreapp2.0
-/src/MyShare.Sample/bin/Debug/netcoreapp2.0
-/src/MyShare.Sample/obj/Debug/netcoreapp2.0
-/src/MyShare.Sample.Tests/bin/Debug/netcoreapp2.0
-/src/MyShare.Sample.Web/bin/Debug/netcoreapp2.0
-/src/MyShare.Sample.Tests/obj/Debug/netcoreapp2.0
-/src/MyShare.Sample.Web/obj/Debug/netcoreapp2.0
+/.vs
+/bin
+/obj
 *.user

@@ -1,0 +1,15 @@
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.Web.deps.json
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.Web.runtimeconfig.json
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.Web.runtimeconfig.dev.json
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.Web.dll
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.Web.pdb
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Kernel.dll
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.dll
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Kernel.pdb
+E:\Repo\MyShare\src\MyShare.Sample.Web\bin\Debug\netcoreapp2.0\MyShare.Sample.pdb
+E:\Repo\MyShare\src\MyShare.Sample.Web\obj\Debug\netcoreapp2.0\MyShare.Sample.Web.csprojResolveAssemblyReference.cache
+E:\Repo\MyShare\src\MyShare.Sample.Web\obj\Debug\netcoreapp2.0\MyShare.Sample.Web.csproj.CoreCompileInputs.cache
+E:\Repo\MyShare\src\MyShare.Sample.Web\obj\Debug\netcoreapp2.0\MyShare.Sample.Web.AssemblyInfoInputs.cache
+E:\Repo\MyShare\src\MyShare.Sample.Web\obj\Debug\netcoreapp2.0\MyShare.Sample.Web.AssemblyInfo.cs
+E:\Repo\MyShare\src\MyShare.Sample.Web\obj\Debug\netcoreapp2.0\MyShare.Sample.Web.dll
+E:\Repo\MyShare\src\MyShare.Sample.Web\obj\Debug\netcoreapp2.0\MyShare.Sample.Web.pdb

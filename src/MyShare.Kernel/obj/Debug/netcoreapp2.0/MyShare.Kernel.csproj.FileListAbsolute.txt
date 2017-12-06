@@ -1,0 +1,13 @@
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\MyShare.Kernel.deps.json
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\MyShare.Kernel.dll
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\MyShare.Kernel.pdb
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.Core.dll
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.Core.xml
+E:\Repo\MyShare\src\MyShare.Kernel\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
+E:\Repo\MyShare\src\MyShare.Kernel\obj\Debug\netcoreapp2.0\MyShare.Kernel.csprojResolveAssemblyReference.cache
+E:\Repo\MyShare\src\MyShare.Kernel\obj\Debug\netcoreapp2.0\MyShare.Kernel.csproj.CoreCompileInputs.cache
+E:\Repo\MyShare\src\MyShare.Kernel\obj\Debug\netcoreapp2.0\MyShare.Kernel.AssemblyInfoInputs.cache
+E:\Repo\MyShare\src\MyShare.Kernel\obj\Debug\netcoreapp2.0\MyShare.Kernel.AssemblyInfo.cs
+E:\Repo\MyShare\src\MyShare.Kernel\obj\Debug\netcoreapp2.0\MyShare.Kernel.dll
+E:\Repo\MyShare\src\MyShare.Kernel\obj\Debug\netcoreapp2.0\MyShare.Kernel.pdb

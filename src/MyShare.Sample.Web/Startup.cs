@@ -15,7 +15,18 @@ using System.Linq;
 using MyShare.Kernel.Messages;
 using MyShare.Kernel.Routing;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using Microsoft.AspNetCore.Mvc.Controllers;
 using ISession = MyShare.Kernel.Domain.ISession;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.ViewComponents;
+using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
+using Microsoft.Extensions.Options;
+using MyShare.Kernel.Json;
+using MyShare.Kernel.Providers;
 
 namespace MyShare.Sample.Web
 {
@@ -24,6 +35,50 @@ namespace MyShare.Sample.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+
+            //See https://github.com/aspnet/Mvc/issues/3936 to know why we added these services.
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
+
+            //Use DI to create controllers
+            services.Replace(ServiceDescriptor.Transient<IControllerActivator, ServiceBasedControllerActivator>());
+
+            //Use DI to create view components
+            services.Replace(ServiceDescriptor.Singleton<IViewComponentActivator, ServiceBasedViewComponentActivator>());
+
+            ////Change anti forgery filters (to work proper with non-browser clients)
+            //services.Replace(ServiceDescriptor.Transient<AutoValidateAntiforgeryTokenAuthorizationFilter, AbpAutoValidateAntiforgeryTokenAuthorizationFilter>());
+            //services.Replace(ServiceDescriptor.Transient<ValidateAntiforgeryTokenAuthorizationFilter, AbpValidateAntiforgeryTokenAuthorizationFilter>());
+
+            //Add feature providers
+            var partManager = services.BuildServiceProvider().GetService<ApplicationPartManager>();
+            partManager?.FeatureProviders.Add(new ApplicationServiceControllerFeatureProvider(services));
+
+            //Configure JSON serializer
+            services.Configure<MvcJsonOptions>(jsonOptions =>
+            {
+                jsonOptions.SerializerSettings.Converters.Insert(0, new DateTimeConverter());
+            });
+
+            ////Configure MVC
+            //services.Configure<MvcOptions>(mvcOptions =>
+            //{
+            //    mvcOptions.AddAbp(services);
+            //});
+
+            ////Configure Razor
+            //services.Insert(0,
+            //    ServiceDescriptor.Singleton<IConfigureOptions<RazorViewEngineOptions>>(
+            //        new ConfigureOptions<RazorViewEngineOptions>(
+            //            (options) =>
+            //            {
+            //                options.FileProviders.Add(new EmbeddedResourceViewFileProvider(iocResolver));
+            //            }
+            //        )
+            //    )
+            //);
+
+
             services.AddMemoryCache();
 
             //Add Cqrs services
@@ -51,7 +106,7 @@ namespace MyShare.Sample.Web
                     .WithTransientLifetime()
             );
             // Add framework services.
-            services.AddMvc();
+            //services.AddMvc();
 
             //Register routes
             var serviceProvider = services.BuildServiceProvider();

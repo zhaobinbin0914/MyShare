@@ -1,7 +1,7 @@
 using System;
 using MyShare.Kernel.Commands;
 
-namespace MyShare.Sample.WriteModel.Commands
+namespace MyShare.Sample.Commands
 {
     public class RemoveItemsFromInventory : ICommand 
 	{

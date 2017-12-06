@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ReadModel\**" />
+    <EmbeddedResource Remove="ReadModel\**" />
+    <None Remove="ReadModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MyShare.Kernel\MyShare.Kernel.csproj" />
   </ItemGroup>
 

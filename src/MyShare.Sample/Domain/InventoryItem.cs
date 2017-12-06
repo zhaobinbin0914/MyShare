@@ -1,8 +1,8 @@
 ﻿using System;
-using MyShare.Sample.ReadModel.Events;
 using MyShare.Kernel.Domain;
+using MyShare.Sample.Events;
 
-namespace MyShare.Sample.WriteModel.Domain
+namespace MyShare.Sample.Domain
 {
     public class InventoryItem : AggregateRoot
     {

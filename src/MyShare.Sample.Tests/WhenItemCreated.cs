@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Xunit;
-using MyShare.Sample.WriteModel.Domain;
-using MyShare.Sample.WriteModel.Handlers;
-using MyShare.Sample.WriteModel.Commands;
 using MyShare.Kernel.Events;
-using MyShare.Sample.ReadModel.Events;
 using MyShare.Kernel.Tests.Extensions;
+using MyShare.Sample.Commands;
+using MyShare.Sample.Domain;
+using MyShare.Sample.Handlers;
+using MyShare.Sample.Events;
+using Xunit;
 
-namespace CQRSTest.WriteModel
+namespace MyShare.Sample.Tests.WriteModel
 {
     public class WhenItemCreated : Specification<InventoryItem, InventoryCommandHandlers, CreateInventoryItem>
     {

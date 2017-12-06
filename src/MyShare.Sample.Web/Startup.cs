@@ -6,15 +6,15 @@ using Microsoft.Extensions.Logging;
 using MyShare.Kernel.Commands;
 using MyShare.Kernel.Events;
 using MyShare.Kernel.Domain;
-using MyShare.Sample.WriteModel;
 using MyShare.Kernel.Caching;
-using MyShare.Sample.ReadModel;
-using MyShare.Sample.WriteModel.Handlers;
+using MyShare.Sample;
 using System.Reflection;
 using System.Linq;
 using MyShare.Kernel.Messages;
 using MyShare.Kernel.Routing;
 using Microsoft.AspNetCore.Http;
+using MyShare.Sample.Handlers;
+using MyShare.Sample.Query;
 using ISession = MyShare.Kernel.Domain.ISession;
 
 namespace MyShare.Sample.Web
@@ -27,7 +27,7 @@ namespace MyShare.Sample.Web
             services.AddMemoryCache();
 
             //Add Cqrs services
-            services.AddSingleton<Router>(new Router());
+            services.AddSingleton(new Router());
             services.AddSingleton<ICommandSender>(y => y.GetService<Router>());
             services.AddSingleton<IEventPublisher>(y => y.GetService<Router>());
             services.AddSingleton<IHandlerRegistrar>(y => y.GetService<Router>());
@@ -36,7 +36,7 @@ namespace MyShare.Sample.Web
             services.AddScoped<IRepository>(y => new CacheRepository(new Repository(y.GetService<IEventStore>()), y.GetService<IEventStore>(), y.GetService<ICache>()));
             services.AddScoped<ISession, Session>();
 
-            services.AddTransient<IReadModelFacade, ReadModelFacade>();
+            services.AddTransient<IQueryModelFacade, QueryModelFacade>();
 
             //Scan for commandhandlers and eventhandlers
             services.Scan(scan => scan

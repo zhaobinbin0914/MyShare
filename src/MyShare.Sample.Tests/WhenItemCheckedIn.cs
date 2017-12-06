@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MyShare.Sample.ReadModel.Events;
-using MyShare.Sample.WriteModel.Commands;
-using MyShare.Sample.WriteModel.Domain;
-using MyShare.Sample.WriteModel.Handlers;
 using MyShare.Kernel.Events;
-using Xunit;
 using MyShare.Kernel.Tests.Extensions;
+using MyShare.Sample.Commands;
+using MyShare.Sample.Domain;
+using MyShare.Sample.Handlers;
+using MyShare.Sample.Events;
+using Xunit;
 
-namespace MyShare.Sample.Test.WriteModel
+namespace MyShare.Sample.Tests.WriteModel
 {
     public class When_item_checked_in : Specification<InventoryItem, InventoryCommandHandlers, CheckInItemsToInventory>
     {

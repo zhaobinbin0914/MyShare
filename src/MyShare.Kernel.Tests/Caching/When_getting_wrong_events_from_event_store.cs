@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using MyShare.Kernel.Caching;
 using MyShare.Kernel.Tests.Substitutes;
 using Xunit;
+// ReSharper disable InconsistentNaming
 
 namespace MyShare.Kernel.Tests.Caching
 {

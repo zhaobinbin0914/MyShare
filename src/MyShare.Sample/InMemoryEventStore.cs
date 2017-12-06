@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MyShare.Kernel.Events;
 
-namespace MyShare.Sample.WriteModel
+namespace MyShare.Sample
 {
     public class InMemoryEventStore : IEventStore
     {

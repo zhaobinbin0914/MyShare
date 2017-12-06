@@ -1,11 +1,11 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using MyShare.Sample.WriteModel.Commands;
-using MyShare.Sample.WriteModel.Domain;
 using MyShare.Kernel.Commands;
 using MyShare.Kernel.Domain;
+using MyShare.Sample.Commands;
+using MyShare.Sample.Domain;
 
-namespace MyShare.Sample.WriteModel.Handlers
+namespace MyShare.Sample.Handlers
 {
     public class InventoryCommandHandlers : ICommandHandler<CreateInventoryItem>,
         ICancellableCommandHandler<DeactivateInventoryItem>,

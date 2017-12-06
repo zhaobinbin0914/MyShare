@@ -1,19 +1,20 @@
-﻿using MyShare.Sample.ReadModel;
-using MyShare.Sample.WriteModel.Commands;
+﻿using MyShare.Sample;
 using MyShare.Kernel.Commands;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using MyShare.Sample.Commands;
+using MyShare.Sample.Query;
 
 namespace MyShare.Sample.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ICommandSender _commandSender;
-        private readonly IReadModelFacade _readmodel;
+        private readonly IQueryModelFacade _readmodel;
 
-        public HomeController(ICommandSender commandSender, IReadModelFacade readmodel)
+        public HomeController(ICommandSender commandSender, IQueryModelFacade readmodel)
         {
             _readmodel = readmodel;
             _commandSender = commandSender;

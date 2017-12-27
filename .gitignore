@@ -1,4 +1,9 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
 
-src/MyShare.Kernel.Tests.Extensions/bin/Debug/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml
-src/MyShare.Kernel.Tests.Extensions/bin/Debug/netstandard2.0/MyShare.Kernel.Tests.Extensions.deps.json
-src/MyShare.Kernel.Tests.Extensions/bin/Debug/netstandard2.0/Newtonsoft.Json.xml
+/.vs
+/bin
+/obj
+*.user
+/Build

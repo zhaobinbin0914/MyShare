@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShare.Kernel", "src\MyShare.Kernel\MyShare.Kernel.csproj", "{A4BF93DB-7A22-4C8D-B08B-8AB39B6BD77B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShare.Kernel", "src\MyShare.Kernel\MyShare.Kernel.csproj", "{A4BF93DB-7A22-4C8D-B08B-8AB39B6BD77B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShare.Kernel.Tests", "src\MyShare.Kernel.Tests\MyShare.Kernel.Tests.csproj", "{93551249-94C3-4A05-98B1-1E4127CCD69A}"
 EndProject
@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{6404F02F-8DA4-4112-AB3F-09BCDF6D0F31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShare.Sample", "src\MyShare.Sample\MyShare.Sample.csproj", "{CF8ACD4E-0994-4160-AEAA-5BD811B7FFE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShare.Sample", "src\MyShare.Sample\MyShare.Sample.csproj", "{CF8ACD4E-0994-4160-AEAA-5BD811B7FFE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShare.Sample.Tests", "src\MyShare.Sample.Tests\MyShare.Sample.Tests.csproj", "{087F4D1C-F48F-4C71-906A-36529AC7552A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShare.Sample.Web", "src\MyShare.Sample.Web\MyShare.Sample.Web.csproj", "{9F3B81D8-F6F7-4C7D-BD74-A1CF3E1EBD7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShare.Sample.Web", "src\MyShare.Sample.Web\MyShare.Sample.Web.csproj", "{9F3B81D8-F6F7-4C7D-BD74-A1CF3E1EBD7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShare.Kernel.Tests.Extensions", "src\MyShare.Kernel.Tests.Extensions\MyShare.Kernel.Tests.Extensions.csproj", "{A12BF287-DC07-4BE6-AA36-AF3464DAA3A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShare.Kernel.Tests.Extensions", "src\MyShare.Kernel.Tests.Extensions\MyShare.Kernel.Tests.Extensions.csproj", "{A12BF287-DC07-4BE6-AA36-AF3464DAA3A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
